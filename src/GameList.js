@@ -1,6 +1,7 @@
 import React from 'react';
 import jQuery from 'jquery';
-import { Link } from 'react-router';
+import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
+import GameItem from './GameItem';
 
 class GameList extends React.Component {
   constructor() {
@@ -24,19 +25,18 @@ class GameList extends React.Component {
    }
 
    componentDidMount() {
-     console.log("componentDidMount");
-     this.reloadGames();
-   }
+      this.reloadGames();
+    }
 
-    render() {
+   render() {
       return(
         <div>
           <h1>Games!</h1>
-            <table>
-              <tbody>
-                {this.state.games.map(this.renderGame.bind(this))
-             </tbody>
-           </table>
+            {this.state.games.map(function(game, i) {
+              return(
+                <GameItem key={game.id} id={game.id} title={game.title} description={game.description} />
+              );
+            })}
         </div>
       );
     }
