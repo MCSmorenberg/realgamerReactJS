@@ -26,9 +26,9 @@ class Game extends React.Component {
       console.log(data);
 
       component.setState({
-        project: data.game
+        game: data.game
       });
-    });
+    }); 
   }
 
   render() {
@@ -36,7 +36,9 @@ class Game extends React.Component {
       <div>
       <h1>Game!</h1>
       <h1>{this.state.game.title}</h1>
+      <p>{this.state.game.genre}</p>
       <p>{this.state.game.description}</p>
+
     </div>
     );
   }
