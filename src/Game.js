@@ -1,13 +1,11 @@
 import React from 'react';
-import jQuery from 'jquery';
-import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 
-class Project extends React.Component {
-
-  constructor() {
-    super();
+class Game extends React.Component {
+  render() {
+    return(
+        <h1>Game!</h1>
+    );
   }
-
 }
 
 export default Game;
