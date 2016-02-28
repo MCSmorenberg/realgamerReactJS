@@ -3,7 +3,10 @@ import React from 'react';
 class Game extends React.Component {
   render() {
     return(
-        <h1>Game!</h1>
+      <div>
+      <h1>Game!</h1>
+      <p>{this.props.params.gameId}</p>
+    </div>
     );
   }
 }

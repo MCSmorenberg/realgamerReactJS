@@ -5,7 +5,7 @@ import App from './App';
 import Home from './Home';
 import Contact from './Contact';
 import GameList from './GameList';
-
+import Game from './Game';
 import PageNotFound from './PageNotFound';
 
 ReactDOM.render((
@@ -13,7 +13,7 @@ ReactDOM.render((
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="/gamelist" component={GameList} />
-
+      <Route path="/game/:gameId" component={Game}/>
       <Route path="/contact" component={Contact}/>
       <Route path="*" />
     </Route>
