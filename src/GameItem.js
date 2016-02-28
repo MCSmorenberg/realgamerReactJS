@@ -13,6 +13,8 @@ class GameItem extends React.Component {
       key: this.props.id,
       id: this.props.id,
       title: this.props.title,
+      genre: this.props.genre,
+      developer: this.props.developer,
       description: this.props.description
     })
   }
@@ -22,6 +24,8 @@ class GameItem extends React.Component {
        <Link to={`/game/${this.state.id}`}>
         <div>
           <h2>{this.state.title}</h2>
+          <p>Genre: <strong>{this.state.genre}</strong></p>
+          <p>Developer: <strong>{this.state.developer}</strong></p>
           <p>{this.state.description}</p>
         </div>
       </Link>
