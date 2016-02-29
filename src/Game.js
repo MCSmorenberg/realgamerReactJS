@@ -28,18 +28,16 @@ class Game extends React.Component {
       component.setState({
         game: data.game
       });
-    }); 
+    });
   }
 
   render() {
     return(
       <div>
-      <h1>Game!</h1>
-      <h1>{this.state.game.title}</h1>
-      <p>{this.state.game.genre}</p>
-      <p>{this.state.game.description}</p>
-
-    </div>
+        <h1>Game!</h1>
+        <h1>{this.state.game.title}</h1>
+        <ReviewList gameId={this.props.params.gamesId} />
+      </div>
     );
   }
 }

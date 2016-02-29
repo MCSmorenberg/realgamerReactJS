@@ -6,6 +6,7 @@ import Home from './Home';
 import Contact from './Contact';
 import GameList from './GameList';
 import Game from './Game';
+import ReviewList from './ReviewList'
 import PageNotFound from './PageNotFound';
 
 ReactDOM.render((
@@ -14,6 +15,7 @@ ReactDOM.render((
       <IndexRoute component={Home} />
       <Route path="/gamelist" component={GameList} />
       <Route path="/game/:gameId" component={Game}/>
+      <Route path="/game/:gameId/reviewlist" component={ReviewList}/>
       <Route path="/contact" component={Contact}/>
       <Route path="*" />
     </Route>
