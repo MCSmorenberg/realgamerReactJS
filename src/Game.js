@@ -1,6 +1,7 @@
 import React from 'react';
 import jQuery from 'jquery';
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
+import ReviewList from './ReviewList';
 
 class Game extends React.Component {
   constructor() {
