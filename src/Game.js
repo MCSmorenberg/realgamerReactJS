@@ -35,8 +35,7 @@ class Game extends React.Component {
   render() {
     return(
       <div>
-        <h1>Game!</h1>
-        <h1>{this.state.game.title}</h1>
+        <h1>Reviews of {this.state.game.title}</h1>
         <ReviewList gameId={this.props.params.gameId} />
       </div>
     );

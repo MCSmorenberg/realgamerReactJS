@@ -21,14 +21,12 @@ class GameItem extends React.Component {
 
    render() {
      return(
-       <Link to={`/game/${this.state.id}`}>
-        <div>
-          <h2>{this.state.title}</h2>
-          <p>Genre: <strong>{this.state.genre}</strong></p>
-          <p>Developer: <strong>{this.state.developer}</strong></p>
-          <p>{this.state.description}</p>
-        </div>
-      </Link>
+      <div>
+        <Link to={`/game/${this.state.id}`}><h2>{this.state.title}</h2></Link>
+        <p>Genre: <strong>{this.state.genre}</strong></p>
+        <p>Developer: <strong>{this.state.developer}</strong></p>
+        <p>{this.state.description}</p>
+      </div>
      );
    }
  }

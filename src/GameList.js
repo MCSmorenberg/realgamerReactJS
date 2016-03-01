@@ -31,7 +31,6 @@ class GameList extends React.Component {
    render() {
       return(
         <div>
-          <h1>Games!</h1>
             {this.state.games.map(function(game, i) {
               return(
                 <GameItem key={game.id} id={game.id} title={game.title} genre={game.genre} developer={game.developer} description={game.description} />

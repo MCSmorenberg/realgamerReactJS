@@ -38,8 +38,6 @@ class ReviewList extends React.Component {
    render() {
       return(
         <div>
-
-          <h1>Reviews!</h1>
           <ul>
             {this.state.reviews.map(function(review, i) {
               return(

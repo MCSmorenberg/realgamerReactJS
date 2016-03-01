@@ -9,7 +9,7 @@ class ReviewItem extends React.Component {
     this.setState({
       key: this.props.id,
       id: this.props.id,
-      title: this.props.name,
+      name: this.props.name,
       description: this.props.description,
       rating: this.props.rating
     })
@@ -18,9 +18,9 @@ class ReviewItem extends React.Component {
    render() {
      return(
       <div>
-        <h3>{this.state.Name}</h3>
+        <h3>{this.state.name} says;</h3>
         <p>{this.state.description}</p>
-        <p>{this.state.rating}</p>
+        <p>Rating: {this.state.rating}</p>
       </div>
      );
    }
