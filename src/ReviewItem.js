@@ -18,7 +18,9 @@ class ReviewItem extends React.Component {
    render() {
      return(
       <div>
-
+        <h3>{this.state.Name}</h3>
+        <p>{this.state.description}</p>
+        <p>{this.state.rating}</p>
       </div>
      );
    }

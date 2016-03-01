@@ -19,7 +19,7 @@ class Game extends React.Component {
   findGame() {
     console.log("getting game...");
 
-    let gameId = this.props.params.gametId;
+    let gameId = this.props.params.gameId;
 
     let component = this;
 
@@ -37,7 +37,7 @@ class Game extends React.Component {
       <div>
         <h1>Game!</h1>
         <h1>{this.state.game.title}</h1>
-        <ReviewList gameId={this.props.params.gamesId} />
+        <ReviewList gameId={this.props.params.gameId} />
       </div>
     );
   }

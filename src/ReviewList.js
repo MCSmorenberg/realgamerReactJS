@@ -2,7 +2,7 @@ import React from 'react';
 import jQuery from 'jquery';
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 
-import GameItem from './GameItem';
+import ReviewItem from './ReviewItem';
 
 class ReviewList extends React.Component {
   constructor() {
@@ -17,14 +17,16 @@ class ReviewList extends React.Component {
    }
 
    reloadReviews(event) {
-     let gamesId = this.props.gamesId;
+     console.log(this.props)
+     let gameId = this.props.gameId;
+
      let component = this;
 
-     jQuery.getJSON("https://realgamer.herokuapp.com/games/${gamesId}/reviews", function(data) {
+     jQuery.getJSON(`https://realgamer.herokuapp.com/games/${gameId}/reviews`, function(data) {
        console.log(data);
 
        component.setState({
-         games: data.reviews
+         reviews: data.reviews
        });
      });
    }
@@ -36,7 +38,7 @@ class ReviewList extends React.Component {
    render() {
       return(
         <div>
-        //<ReviewForm onChange={this.reloadReviews.bind(this)} gamesId={this.props.gamesId} />
+
           <h1>Reviews!</h1>
           <ul>
             {this.state.reviews.map(function(review, i) {
