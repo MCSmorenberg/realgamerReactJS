@@ -27,7 +27,8 @@ class Game extends React.Component {
       console.log(data);
 
       component.setState({
-        game: data.game
+        game: data.game,
+        average_rating: data.average_rating
       });
     });
   }

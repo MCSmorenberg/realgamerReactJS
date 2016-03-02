@@ -33,7 +33,7 @@ class GameList extends React.Component {
         <div>
             {this.state.games.map(function(game, i) {
               return(
-                <GameItem key={game.id} id={game.id} title={game.title} genre={game.genre} developer={game.developer} description={game.description} />
+                <GameItem key={game.id} id={game.id} title={game.title} genre={game.genre} developer={game.developer} description={game.description} average_rating={game.average_rating} />
               );
             })}
         </div>
