@@ -37,6 +37,7 @@ class Game extends React.Component {
     return(
       <div>
         <h1>Reviews of {this.state.game.title}</h1>
+        <p><strong>Average rating:</strong> {this.state.average_rating}★</p>
         <ReviewList gameId={this.props.params.gameId} />
       </div>
     );

@@ -26,7 +26,6 @@ class GameItem extends React.Component {
         <p>Genre: <strong>{this.state.genre}</strong></p>
         <p>Developer: <strong>{this.state.developer}</strong></p>
         <p>{this.state.description}</p>
-        <p>Average rating: {this.state.average_rating}</p>
       </div>
      );
    }

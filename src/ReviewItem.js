@@ -20,7 +20,7 @@ class ReviewItem extends React.Component {
       <div>
         <h3>{this.state.name} says;</h3>
         <p>{this.state.description}</p>
-        <p>Rating: {this.state.rating}</p>
+        <p>Rating: {this.state.rating}★</p>
       </div>
      );
    }

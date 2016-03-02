@@ -52,7 +52,7 @@ import React from 'react';
           <input ref="newDescription" placeholder="Put your review here!" />
         <div>
         </div>
-          <input ref="newRating" placeholder="1-5" />
+          <input ref="newRating" placeholder="rate: 1-5" />
          </div>
          <div>
            <button type="submit">Send</button>
