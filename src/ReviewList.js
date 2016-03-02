@@ -1,7 +1,7 @@
 import React from 'react';
 import jQuery from 'jquery';
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
-
+import ReviewForm from './ReviewForm';
 import ReviewItem from './ReviewItem';
 
 class ReviewList extends React.Component {
@@ -38,6 +38,7 @@ class ReviewList extends React.Component {
    render() {
       return(
         <div>
+        <ReviewForm onChange={this.reloadReviews.bind(this)} gameId={this.props.gameId} />
           <ul>
             {this.state.reviews.map(function(review, i) {
               return(
