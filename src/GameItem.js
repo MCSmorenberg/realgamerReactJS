@@ -6,6 +6,8 @@ import { Link } from 'react-router';
 class GameItem extends React.Component {
    constructor() {
      super();
+
+     this.state = {};
    }
 
    componentDidMount() {

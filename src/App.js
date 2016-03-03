@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import './stylesheets/_bootstrap.scss';
+import './assets/stylesheets/_bootstrap.scss';
 
 class App extends React.Component {
     render() {
