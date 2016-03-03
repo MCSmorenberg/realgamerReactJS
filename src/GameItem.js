@@ -7,7 +7,13 @@ class GameItem extends React.Component {
    constructor() {
      super();
 
-     this.state = {};
+     this.state = {
+       id: null,
+       title: "",
+       genre: "",
+       developer: "",
+       description: ""
+     };
    }
 
    componentDidMount() {
