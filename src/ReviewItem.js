@@ -3,6 +3,12 @@ import React from 'react';
 class ReviewItem extends React.Component {
    constructor() {
      super();
+
+     this.state = {
+       name: "",
+       description: "",
+       rating: ""
+     };
    }
 
    componentDidMount() {

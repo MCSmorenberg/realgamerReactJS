@@ -8,7 +8,8 @@ class Game extends React.Component {
   super();
 
   this.state = {
-      game: {}
+      game: {},
+      average_rating: 0
     };
   }
 
