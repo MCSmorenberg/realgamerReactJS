@@ -10,7 +10,7 @@ open http://localhost:3000
 
 ## See Games and Reviews
 
-On the Games tab you will see the Games from the API "https://realgamer.herokuapp.com". By clicking on the game title you will see the reviews of that game. If you like you can add a review.
+On the Games tab you will see the Games from the API "https://realgamer.herokuapp.com" (this can take a few seconds). By clicking on the game title you will see the reviews of that game. If you like you can add a review.
 
 ------------------
 
